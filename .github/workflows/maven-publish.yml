@@ -38,5 +38,5 @@ jobs:
         path: target
         
     - name: Deploy to Tomcat
-      run: curl -v -u admin:admin -T ${{ github.workspace }}/target/*.war "http://52.32.30.38:8080/manager/text/deploy?path=/pradeep_test"
+      run: curl -v -u admin:admin -T ${{ github.workspace }}/target/*.war "http://52.32.30.38:8080//manager/text/deploy?path=/pradeep_test"
      # run: curl --request PUT --upload-file ${{ github.workspace }}/target/*.war --basic --user deployer:deployer "http://52.32.30.38:8080/manager/text/deploy?path=/pradeep_test\&update=true" 
