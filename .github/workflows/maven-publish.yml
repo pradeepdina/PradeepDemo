@@ -38,4 +38,4 @@ jobs:
         path: target
         
     - name: Deploy to Tomcat
-      run: curl -V -u deployer:deployer -T ${{ github.workspace }}/target/*.war "http://52.32.30.38:8080/manager/text/deploy?path=/pradeep_test"
+      run: curl -V -u deployer:deployer -T ${{ github.workspace }}/target/*.war "http://52.32.30.38:8080/manager/html/deploy?path=/pradeep_test"
